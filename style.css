@@ -100,7 +100,9 @@ img {
     color: #fff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-textarea,#scientistInput {
+
+textarea,
+#scientistInput {
     border: solid 1px grey;
     border-radius: 10px;
 }
@@ -110,7 +112,8 @@ textarea,#scientistInput {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-a, button{
+a,
+button {
     text-decoration: none;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(255, 229, 236);
@@ -118,15 +121,16 @@ a, button{
     padding: 5px;
     margin: 10px;
 }
-button{
+
+button {
     background-color: rgb(94, 127, 93);
     border: 0;
 }
-.nav_links{
+
+.nav_links {
     text-align: center;
 }
 
 button:hover {
-    background-color: rgb(47,22,21);
+    background-color: rgb(47, 22, 21);
 }
-
