@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LADY GAGA</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">LADY GAGA</h1>
+        <h1 id="header" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">LADY GAGA</h1>
     </header>
     <div class="gaga_img">
         <img src="/Users/runzimu/BootcampMay29/Week 1/Assignment/Use_Case_Project_1/Lady_Gaga.jpg"
@@ -39,7 +45,7 @@
             through her music.</p>
         <img src="/Users/runzimu/BootcampMay29/Week 1/Assignment/Use_Case_Project_1/Chromatica-font.png" width="25px"
             height="25px">
-        <p>Moreover, Lady Gaga’s impact extends beyond her musical career. She
+        <p style="margin-bottom: 26.5px"> Moreover, Lady Gaga’s impact extends beyond her musical career. She
             has been an advocate for mental health awareness, <span style="font-weight: 100;"><span
                     style="color: red;">L</span><span style="color: orange;">G</span><span
                     style="color: green;">B</span><span style="color: blue;">T</span><span
@@ -293,10 +299,30 @@
                     <h1>Adele</h1>
                 </div>
             </div>
-            <form class="yourfav">
-                <input type="text">
-            </form>
-        </div>
+            <h2 class="tour-header"
+                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: aliceblue;">
+                YOUR FAVOURITE ARTISTS </h2>
+            <div class="fav_artists">
+            <script>
+                function addScientist() {
+                    var input = document.getElementById("scientistInput").value;
+                    var textbox = document.getElementById("scientistText");
+                    textbox.value += input + "\n";
+                }
+            </script>
+            <label for="scientistInput" style="font-size: 16pt;">Your Favorite Artist:</label>
+            <input type="text" id="scientistInput" name="scientistInput" style="padding-top: 8px; border-radius: 3px;margin-left: 5px;">
+            <button onclick="addScientist()" style="border: solid 1px grey; border-radius: 5px; padding: 0 8px; background-color: aliceblue; color: black;">+</button>
+            <br>
+             <br> 
+            <textarea id="scientistText" rows="5" cols="30"></textarea>
+            </div>
+            <br>
+            <div class="nav_links">
+            <a href="#"><button style="padding-left: 15px;
+            padding-right: 15px;">Back to Top</button></a>
+            <a href="https://www.ladygaga.com/#/"><button>ENTER SITE</a></button></a>
+            </div>
         <div id="footer">
             &copy; 2023 INTERSCOPE RECORDS
         </div>
